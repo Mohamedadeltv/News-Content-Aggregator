@@ -4,9 +4,9 @@ from bs4 import BeautifulSoup
 
 # GEtting news from Times of India
 
-toi_r = requests.get("https://www.thenationalnews.com/mena/egypt/")
+toi_r = requests.get("https://egyptianstreets.com/category/news-politics-and-society/")
 toi_soup = BeautifulSoup(toi_r.content, 'html5lib')
-toi_headings = toi_soup.findAll("div", {"class": "flex flex_direction_column custom-simple-text"})
+toi_headings = toi_soup.findAll("div", {"class": "widget-full-list-text left relative"})
 toi_headings = toi_headings[2:]
 toi_news = []
 
