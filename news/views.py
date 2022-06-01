@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup as BSoup, BeautifulSoup
+
+
 
 # GEtting news from Times of India
 
